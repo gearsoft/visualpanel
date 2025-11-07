@@ -1,0 +1,28 @@
+name: visualpanel
+description: HMI for visualizing sensor data from IoT devices.
+version: 0.1.0
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.5.0
+  # file_picker: federated plugin (5.x) may require platform packages for
+  # desktop/web. We include explicit platform implementations so the app can
+  # resolve the plugin on Windows/macOS/Linux/web.
+  # Pin file_picker to a 4.x release for broader platform compatibility with
+  # this Flutter SDK. Newer 5.x releases are federated and may require
+  # explicit platform packages or a newer Flutter toolchain.
+  file_picker: ^4.6.1
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/plc_config.json
