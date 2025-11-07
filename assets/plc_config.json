@@ -1,0 +1,42 @@
+{
+  "plcs": [
+    {
+      "plc_id": "compact_1",
+      "name": "CompactLogix-1",
+      "type": "compactlogix",
+      "ip": "192.168.32.201",
+      "tags": [
+        {
+          "name": "ABS1_Auto",
+          "address": "Abs1.Auto",
+          "data_type": "BOOL"
+        },
+        {
+          "name": "ABS1_CFA_Actual",
+          "address": "Abs1.CFA.Actual",
+          "data_type": "REAL",
+          "scale": 1
+        },
+        {
+          "name": "M1_Batch_Weight",
+          "address": "M1.Batch.Weight",
+          "data_type": "DINT",
+          "scale": 1
+        }
+      ]
+    },
+    {
+      "plc_id": "slc_1",
+      "name": "SLC5_05-1",
+      "type": "slc505",
+      "ip": "192.168.32.146",
+      "tags": [
+        {
+          "name": "SLC_Status",
+          "address": "N7:0",
+          "data_type": "INT"
+        }
+      ]
+    }
+  ]
+}
